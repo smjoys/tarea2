@@ -2,16 +2,16 @@ package kdtree;
 
 public class KDNodo {
     int factor;
-    int X;
-    int Y;
+    int edad;
+    int peso;
     KDNodo right;
     KDNodo left;
 
     public KDNodo(int x,int y,int f){
         this.factor = f;
-        this.X = x;
-        this.Y= y;
+        this.edad = x;
+        this.peso = y;
         right = null;
-        left=null;
+        left = null;
     }
 }
