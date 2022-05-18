@@ -37,7 +37,9 @@ public class KDTree {
     }
 
     public float factor(int edad, int peso){
-        return searchEdad(root, edad, peso).factor;
+        KDNodo i = searchEdad(root,edad,peso);
+        return i.factor;
+
     }
 
     private KDNodo searchEdad(KDNodo n, int edad, int peso){
