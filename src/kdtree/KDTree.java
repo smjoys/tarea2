@@ -36,6 +36,21 @@ public class KDTree {
         }
     }
 
+    public float factor(int edad, int peso){
+        return searchEdad(root, edad, peso).factor;
+    }
 
+    private KDNodo searchEdad(KDNodo n, int edad, int peso){
+        if (n == null | n.edad == edad && n.peso == peso) return n;
+        if (edad < n.edad) {
+            return searchPeso(n.left,peso,edad);
+        }else return searchPeso(n.right,peso,edad);
+    }
+    private KDNodo searchPeso(KDNodo n, int peso, int edad){
+        if (n == null | n.edad == edad && n.peso == peso) return n;
+        if (peso < n.peso) {
+            return searchEdad(n.left,edad,peso);
+        }else return searchEdad(n.right,edad,peso);
+    }
 
 }
