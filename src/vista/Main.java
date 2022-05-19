@@ -37,9 +37,9 @@ public class Main {
                 System.out.print("ingrese el peso: ");
                 int peso = keypad.nextInt();
                 System.out.println(" ");
-                System.out.println("RECUERDE QUE FACTOR DEBE SER IGUAL O MAYOR QUE CERO");
+                System.out.println("RECUERDE QUE FACTOR DEBE SER IGUAL O MAYOR QUE CERO Y SI ES DECIMAL DEBE LLEVAR COMA NO PUNTO");
                 System.out.print("ingrese factor: ");
-                int factor = keypad.nextInt();
+                float factor = keypad.nextFloat();
                 arbol.insertar(edad,peso,factor);
                 System.out.println("¿desea agregar mas individuos?");
                 System.out.println("1) si");
