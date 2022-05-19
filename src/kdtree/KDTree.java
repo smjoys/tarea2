@@ -8,7 +8,8 @@ public class KDTree {
         root = null;
     }
 
-    public void insertar(int edad,int peso,int factor){
+    //insertar para valores igual o mayor que cero
+    public void insertar(int edad,int peso,float factor){
         KDNodo n = new KDNodo(edad,peso,factor);
         if (root == null) root= n;
         else revEdad(n,root);

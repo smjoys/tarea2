@@ -1,13 +1,13 @@
 package kdtree;
 
 public class KDNodo {
-    int factor;
+    float factor;
     int edad;
     int peso;
     KDNodo right;
     KDNodo left;
 
-    public KDNodo(int x,int y,int f){
+    public KDNodo(int x,int y,float f){
         this.factor = f;
         this.edad = x;
         this.peso = y;

@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         KDTree arbol = new KDTree();
         Scanner keypad = new Scanner(System.in);
-        // ejemplo valorres
+        // ejemplo valores improvisados
         arbol.insertar(45,70,3);
         arbol.insertar(12,20,5);
         arbol.insertar(30,45,7);
@@ -33,10 +33,11 @@ public class Main {
             do {
                 System.out.print("ingrese la edad: ");
                 int edad = keypad.nextInt();
-                System.out.println("");
+                System.out.println(" ");
                 System.out.print("ingrese el peso: ");
                 int peso = keypad.nextInt();
-                System.out.println("");
+                System.out.println(" ");
+                System.out.println("RECUERDE QUE FACTOR DEBE SER IGUAL O MAYOR QUE CERO");
                 System.out.print("ingrese factor: ");
                 int factor = keypad.nextInt();
                 arbol.insertar(edad,peso,factor);
